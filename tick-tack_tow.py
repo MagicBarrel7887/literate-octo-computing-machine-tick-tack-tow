@@ -37,8 +37,7 @@ def enter_move():
                     if temp is not NULL:
                         if temp is False:
                          print("Please enter a valed number in the board")
-                         
-                        return False
+                         return False
                        
     except Exception as e:
        print('loop search exception occurred', end="\n")

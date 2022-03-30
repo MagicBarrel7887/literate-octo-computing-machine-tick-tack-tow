@@ -127,3 +127,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/cpp/tick tack tow/.vs/tick tack tow/v16/Browse.VC.opendb

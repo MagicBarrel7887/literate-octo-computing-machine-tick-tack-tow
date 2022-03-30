@@ -58,10 +58,10 @@ bool borad_game_full(char d) {
 		{
 			if (d == board_arry[y][x])
 			{
-				return
+				return false;
 			}
 			else {
-				return
+				return true;
 			}
 
 		}
@@ -71,11 +71,14 @@ bool borad_game_full(char d) {
 
 int main()
 {
+	bool meep;
 	cout << "Hello CMake." << endl;
 	define_display_board();
 	while (true)
 	{
 		get_user_input();
+		meep = borad_game_full('O');
+		cout << meep << endl;
 		test();
 		define_display_board();
 	}

@@ -62,9 +62,13 @@ def enter_move(board):
 #     # the list consists of tuples, while each tuple is a pair of row and column numbers.
 
 
-# def victory_for(board, sign):
-#     # The function analyzes the board's status in order to check if
-#     # the player using 'O's or 'X's has won the game
+def victory_for(board, sign):
+     print('Checking for if player', sign, "is the winner!")
+     if board[0][0] == sign and board[0][1] == sign and board[0][2] == sign:
+         print("player", sign, "is the winner!")
+     elif board[1][0] == sign and board[1][1] == sign and board[1][2] == sign:
+        print("player", sign, "is the winner!")
+       
 
 
 # def draw_move(board):

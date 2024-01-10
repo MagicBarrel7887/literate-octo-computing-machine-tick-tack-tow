@@ -2,9 +2,7 @@
 //
 
 #include "tick tack tow.h"
-
 using namespace std;
-
 char board_arry[3][3] = { {55,56,57},
 						 {52,53,54},
 						 {49,50,51}, };
@@ -30,13 +28,11 @@ char board_arry_win_lookup[15][3] = {
 						 {52,53,54},
 						 {42,42,42}, };
 int in;
-
 int define_display_board() {
 	for (size_t y = 0; y < 3; y++)
 	{
 		for (size_t x = 0; x < 3; x++)
 		{
-
 			cout << " | " << board_arry[y][x] << " | ";
 		}
 		cout << endl;
@@ -64,8 +60,6 @@ int get_user_input() {
 		}
 		cout << endl;
 	}
-
-
 	return 0;
 }
 int test(char play_indacator, int index_x, int index_y) {
@@ -86,7 +80,6 @@ int test(char play_indacator, int index_x, int index_y) {
 		}
 		cout << endl;
 	}
-
 	return 0;
 }
 
@@ -102,12 +95,9 @@ bool borad_game_full(char d) {
 			else {
 				return true;
 			}
-
 		}
-		
 	}
 }
-
 int main()
 {
 	bool meep;
